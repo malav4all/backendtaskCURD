@@ -1,10 +1,9 @@
 const express = require("express")
 const Routes = express.Router()
 const userController = require("../controller/userController")
-const {verifyTokenAndAuthoreization,verifyTokenAndAdmin} = require("../utils/verifyToken")
-Routes.put("/:id",verifyTokenAndAuthoreization,userController.updateUser)
+Routes.put("/:id",userController.updateUser)
+Routes.post("/register",userController.register)
 Routes.delete("/:id",userController.deleteUser)
 Routes.get("/allUser",userController.fetchAllUser)
-Routes.get("/find/:id",verifyTokenAndAdmin,userController.getUserByIds)
 
 module.exports = Routes

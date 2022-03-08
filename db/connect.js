@@ -9,11 +9,10 @@
  const mongoose = require('mongoose');
  const dbOptions = {
      useNewUrlParser : true,
-    //  poolSize:process.env.POOL_SIZE
  };
- mongoose.connect(process.env.DB_URL,dbOptions,(err)=>{
+ mongoose.connect("mongodb+srv://malav:malav12345@cluster0.dsd4p.mongodb.net/task?retryWrites=true&w=majority",dbOptions,(err)=>{
      if(err){
-         console.log('DB Error',err)
+         console.log('DB Error',err.message)
      }
      else{
          console.log('Connected to DB')

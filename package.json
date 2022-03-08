@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/malav4all/EliteShoppy-api.git"
+    "url": "git+https://github.com/malav4all/backendtaskCURD.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/malav4all/EliteShoppy-api/issues"
+    "url": "https://github.com/malav4all/backendtaskCURD/issues"
   },
-  "homepage": "https://github.com/malav4all/EliteShoppy-api#readme",
+  "homepage": "https://github.com/malav4all/backendtaskCURD#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
@@ -27,6 +27,7 @@
     "jwt": "^0.2.0",
     "mongoose": "^6.1.4",
     "moongoose": "^0.0.5",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   }
 }
