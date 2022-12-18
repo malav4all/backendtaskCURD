@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const dbOptions = {
   useNewUrlParser: true,
 };
-mongoose.connect('mongodb://localhost:27017', dbOptions, (err) => {
+mongoose.connect('mongodb://localhost:27017/user', dbOptions, (err) => {
   if (err) {
     console.log('DB Error', err.message);
   } else {

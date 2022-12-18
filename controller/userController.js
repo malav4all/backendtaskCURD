@@ -1,8 +1,9 @@
 const UserService = require('../services/userService');
 const User = require('../dto/userdto');
 const path = require('path');
-const userController = {
-  register(req, res) {
+
+const register = (req, res) => {
+  try {
     const {firstName, email, phone, dob} = req.body;
 
     //Uploading Profile Image
@@ -44,7 +45,8 @@ const userController = {
       .catch((error) => {
         console.log(error.message);
       });
-  },
+  } catch (error) {
+    console.log(error.message);
+  }
 };
-
-module.exports = userController;
+module.exports = {register};

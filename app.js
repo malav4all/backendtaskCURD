@@ -21,5 +21,5 @@ app.use(express.urlencoded());
 //Routes
 app.use('/', require('./routes/userroutes'));
 const server = app.listen(process.env.PORT, () => {
-  console.log('Backend Up', server.address().port);
+  console.log('Server Initialization Complete', server.address().port);
 });
